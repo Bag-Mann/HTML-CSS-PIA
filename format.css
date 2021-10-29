@@ -1,115 +1,120 @@
-body{
-    background-color: white;
-    font-family: sans-serif;
+body {
+  background-color: white;
+  font-family: sans-serif;
 }
 
-h1{
-    font-size: 60px;
-    position: relative;
-    right: -580px;
-    top: -20px;
+h1 {
+  font-size: 60px;
+  text-align: center;
 }
 
-h2{
-    font-size: 60px;
-    position: relative;
-    right: -1230px;
-    top: 200px;
+h2 {
+  text-align: center;
 }
 
-#lista ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
+/*Formato navbar*/
+#lista ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-#lista a{
-    color: black;
-    text-decoration: none;
-    display: block;
-    padding: 12px 26px;
-    font-family: "Oswald";
-    font-size: 18px;
+#lista a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 12px 26px;
+  font-family: "Oswald";
+  font-size: 18px;
 }
 
-.secciones > li{
-    float: left;
+.secciones > li {
+  float: left;
 }
 
-.secciones li ul{
-    display: none;
-    position: absolute;
-    min-width: 140px;
+.secciones li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
 }
 
-.secciones li:hover > ul{
-    display: block;
+.secciones li:hover > ul {
+  display: block;
 }
 
-.secciones li ul li{
-    position: relative;
+.secciones li ul li {
+  position: relative;
 }
 
-.secciones li ul li ul{
-    right: -140px;
-    top: 0px;
+.secciones li ul li ul {
+  right: -140px;
+  top: 0px;
 }
 
-#lista{
-    background-color: white;
-    width: 1000px;
-    height: 52px;
+#lista {
+  background-color: white;
+  width: 1000px;
+  height: 52px;
 }
 
-#lista .barra{
-    color: lightblue;
-    padding: 15px 0 0 0;
+#lista .barra {
+  color: lightblue;
+  padding: 15px 0 0 0;
 }
 
-#lista a:hover{
-    color: rgb(226, 173, 0);
-    background: white;
-    animation: 1s ms 1;
+#lista a:hover {
+  color: rgb(226, 173, 0);
+  background: white;
+  animation: 1s ms 1;
 }
 
-@keyframes ms{
-    0%{
-        opacity: 0;
-        transform: scale(1.6);
-    }
+@keyframes ms {
+  0% {
+    opacity: 0;
+    transform: scale(1.6);
+  }
 }
 
-.slider{
-    width: 95%;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-    right: -1000px;
-    top: 150px;
+/*Formato imágenes*/
+.slider {
+  width: 30vw;
+  margin: 1em auto;
+  overflow: hidden;
 }
 
-.slider ul{
-    display: flex;
-    padding: 0;
-    width: 300%;
-    animation: transicion 20s infinite alternate linear;
+.slider ul {
+  display: flex;
+  padding: 0;
+  width: 300%;
+  animation: transicion 20s infinite alternate linear;
 }
 
-.slider li{
-    width: 100%;
-    list-style: none;
+.slider li {
+  width: 100%;
+  list-style: none;
 }
 
-.slider img{
-    width: 40%;
-    height: 40%;
+.slider img {
+  width: 100%;
 }
 
-@keyframes transicion{
-    0% {margin-left: 0;}
-    30% {margin-left: 0;}
-    35% {margin-left: -100%;}
-    65% {margin-left: -100%;}
-    70% {margin-left: -200%;}
-    100% {margin-left: -200%;}
+@keyframes transicion {
+  0% {
+    margin-left: 0;
+  }
+  30% {
+    margin-left: 0;
+  }
+  35% {
+    margin-left: -100%;
+  }
+  65% {
+    margin-left: -100%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  100% {
+    margin-left: -200%;
+  }
 }
