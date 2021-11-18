@@ -2,17 +2,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;700&display=swap");
 
-* {
+*{
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-header {
+header{
   background-color: white;
 }
 
-body {
+body{
   background-image: radial-gradient(#c44900 20%, transparent 20%),
     radial-gradient(#edae49 20%, transparent 20%);
   background-color: #d1b490;
@@ -21,21 +21,9 @@ body {
 }
 
 /*Formato de marca de la pagina*/
-.nombre {
+.nombre{
   text-align: center;
   font-family: "Lobster", cursive;
-}
-
-/*Formato del titulo de la seccion*/
-.nombreSeccion {
-  background-color: black;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-weight: 400;
-  color: white;
-  text-align: center;
 }
 
 /*Formato navbar*/
@@ -85,7 +73,6 @@ body {
   height: 60px;
 }
 
-/*Formato grid articulos*/
 .articulos {
   margin: auto;
   margin-bottom: 30px;
@@ -95,6 +82,7 @@ body {
   grid-column-gap: 5%;
   grid-row-gap: 30px;
 }
+
 /*Formato de cada artículo*/
 .Prod {
   background-color: white;
@@ -143,23 +131,91 @@ body {
   cursor: pointer;
 }
 
-/*Pie de pagina*/
-footer {
-  margin: 0;
-  background: #151515;
-  color: white;
-  padding: 30px 20px;
+.articulos {
+  margin: auto;
+  margin-bottom: 30px;
+  display: grid;
+  width: 80vw;
+  grid-template-columns: 30% 30% 30%;
+  grid-column-gap: 5%;
+  grid-row-gap: 30px;
+}
+  
+/*Formato de cada artículo*/
+.Prod {
+    background-color: white;
+    display: inline;
+    box-shadow: 7px 7px #240b36;
+}
+  
+.fotoProd {
+    display: block;
+    margin: 5% auto;
+    max-width: 80%;
+    height: 20vw;
+}
+  
+.descripcionProd {
+    font-size: 0.8rem;
+    margin-left: 10%;
+}
+  
+.precioProd::before {
+    content: "$ ";
+}
+
+.descripcionProd > .resumenProd {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 70%;
+    height: 3rem;
+}
+  
+.descripcionProd > .precioProd {
+    font-size: 1.2rem;
+    font-weight: 500;
+
+}
+.Prod > .fa-shopping-bag {
+    display: block;
+    font-size: 1.5rem;
+    width: 2rem;
+    margin: 10px;;
+    margin-bottom: 1rem;
+}
+
+.Prod > .fa-shopping-bag:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.main-footer{
+    background: #151515;
+    color: white;
+    padding: 30px 20px;
 }
 
 .footer__txt{
-  color: #555;
-  padding-top: 20px;
-  padding-bottom: 20px;
+    color: #555;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .footer__link{
-  color: #555;
-  text-decoration: none;
-  display: block;
-  padding: 10px 0;
+    color: #555;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+h5{
+  background-color: white;
+  text-align: center;
+  color: #c44900;
+  font-size: 2.5rem;
+}
+h3{
+  background-color: white;
+  text-align: start;
+  color: red;
+  font-size: 2rem;
 }

@@ -21,10 +21,10 @@ body {
 }
 
 /*Formato de marca de la pagina*/
-#titulo_pagina {
-  text-align: center;
-  font-family: "Lobster", cursive;
-}
+.nombre{
+    text-align: center;
+    font-family: "Lobster", cursive;
+  }
 
 /*Formato del titulo de la seccion*/
 .nombreSeccion {
@@ -32,125 +32,111 @@ body {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   margin-top: 1rem;
+  margin-bottom: 1rem;
   font-weight: 400;
   color: white;
   text-align: center;
 }
 
-/*Barra de navegación*/
-
-#navegacion {
-  font-size: 1.2rem;
-  display: flex;
-  margin: auto;
-  margin-top: 2rem;
+/*Formato navbar*/
+#lista ul{
+    list-style: none;
+    padding: 0;
+    transform: translateX(68%) translateY(-2.3%);
+}
+  
+#lista a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+}
+  
+.secciones > li{
+    float: left;
+}
+  
+.secciones li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+  
+.secciones li:hover > ul{
+    display: block;
+}
+  
+.secciones li ul li{
+    position: relative;
+    background-color: white;
+    transform: translateX(-58%);
+}
+  
+.secciones li ul li ul{
+    right: -128px;
+    top: 0px;
+}
+  
+#lista{
+    background-color: white;
+    width: 1000px;
+    height: 60px;
 }
 
-#navegacion a {
-  height: 3rem;
-  display: block;
-  font-family: "Zen Kaku Gothic Antique", Helvetica, sans-serif;
-  color: black;
-  text-decoration: none;
+form{
+    width: 450px;
+    margin: auto;
+    background: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
 }
 
-#navegacion ul {
-  margin: auto;
-  list-style: none;
-  z-index: 100;
+h2{
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 
-.secciones > li > a {
-  border-top: 1px solid black;
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
 }
 
-.secciones > li {
-  padding: 0.2rem;
-  text-align: center;
-  display: block;
-  width: 11rem;
-  float: left;
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
 }
 
-.secciones li ul {
-  display: none;
-  width: 12rem;
-  background-color: white;
-  position: absolute;
-  text-align: left;
+#boton{
+    background: #31384a;
+    color: #fff;
+    padding: 20px;
 }
 
-.secciones li ul li {
-  padding-left: 1rem;
-}
-
-.secciones li ul li ul {
-  top: 15rem;
-  left: 12rem;
-}
-
-.secciones li:hover > ul {
-  display: block;
-}
-
-.secciones li ul li:hover {
-  background-color: rgb(202, 202, 202);
-}
-/*FIN BARRA DE NAVEGACION*/
-
-form {
-  width: 450px;
-  margin: auto;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 10px 20px;
-  box-sizing: border-box;
-  margin-top: 20px;
-  border-radius: 7px;
-}
-
-h2 {
-  color: white;
-  text-align: center;
-  margin: 0;
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
-input,
-textarea {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 7px;
-  box-sizing: border-box;
-  font-size: 17px;
-  border: none;
-}
-
-textarea {
-  min-height: 100px;
-  max-height: 200px;
-  max-width: 100%;
-}
-
-#boton {
-  background: #31384a;
-  color: #fff;
-  padding: 20px;
-}
-
-#boton:hover {
-  cursor: pointer;
+#boton:hover{
+    cursor: pointer;
 }
 
 @media (max-width: 480px) {
-  form {
-    width: 100%;
-  }
+    form{
+        width: 100%;
+    }
 }
 
-h3 {
-  background: black;
-  color: white;
-  text-align: center;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+h3{
+    background: black;
+    color: white;
+    text-align: center;
+    font-family: "Lobster", cursive;
 }
