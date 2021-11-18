@@ -21,7 +21,7 @@ body {
 }
 
 /*Formato de marca de la pagina*/
-.nombre {
+.marca {
   text-align: center;
   font-family: "Lobster", cursive;
 }
@@ -39,13 +39,12 @@ body {
 }
 
 /*Formato navbar*/
-#lista ul{
+#lista ul {
   list-style: none;
   padding: 0;
-  transform: translateX(68%) translateY(-2.3%);
 }
 
-#lista a{
+#lista a {
   color: black;
   text-decoration: none;
   display: block;
@@ -54,35 +53,52 @@ body {
   font-size: 1.2rem;
 }
 
-.secciones > li{
+.secciones > li {
   float: left;
 }
 
-.secciones li ul{
+.secciones li ul {
   display: none;
   position: absolute;
   min-width: 140px;
 }
 
-.secciones li:hover > ul{
+.secciones li:hover > ul {
   display: block;
 }
 
-.secciones li ul li{
+.secciones li ul li {
   position: relative;
   background-color: white;
-  transform: translateX(-58%);
 }
 
-.secciones li ul li ul{
-  right: -128px;
+.secciones li ul li ul {
+  right: -140px;
   top: 0px;
 }
 
-#lista{
+#lista {
   background-color: white;
   width: 1000px;
-  height: 60px;
+  height: 52px;
+}
+
+#lista .barra {
+  color: lightblue;
+  padding: 15px 0 0 0;
+}
+
+#lista a:hover {
+  color: rgb(226, 173, 0);
+  background: white;
+  animation: 1s ms 1;
+}
+
+@keyframes ms {
+  0% {
+    opacity: 1;
+    transform: scale(1.6);
+  }
 }
 
 /*Formato grid articulos*/
@@ -137,29 +153,14 @@ body {
   margin: auto;
   margin-bottom: 1rem;
 }
-
 .Prod > .fa-shopping-bag:hover {
   color: red;
   cursor: pointer;
 }
-
 /*Pie de pagina*/
 footer {
   margin: 0;
   background: #151515;
   color: white;
   padding: 30px 20px;
-}
-
-.footer__txt{
-  color: #555;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.footer__link{
-  color: #555;
-  text-decoration: none;
-  display: block;
-  padding: 10px 0;
 }
